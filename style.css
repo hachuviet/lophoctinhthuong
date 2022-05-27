@@ -1,0 +1,73 @@
+h1 {
+    color: aquamarine ;
+    font-size: 50px;
+    text-align: center;
+}
+ p{ 
+     font-size: 30px;
+    text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif; 
+    }
+
+i{font-size: 50px;
+  color: red;
+}
+
+    body {background-image: url(https://toigingiuvedep.vn/wp-content/uploads/2021/01/anh-background-cu-nhuom-den.jpg);}
+input{font-size: 30px;} 
+
+button{font-size: 30px;}
+
+#tho {
+  
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    text-align: center;
+
+}   
+/* 
+/* * {
+    text-align: center;
+    color: rgb(201, 219, 40);
+  }
+  div {
+      padding: 180;
+      border: 2px solid;
+  } */ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #3f3333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }

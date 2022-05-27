@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #b39b9b;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+  .center {
+   text-align:center ; 
+   color: rgb(38, 36, 36);
+  }
+  .div {color: gold;}
+
+</style>
+</head>
+<body style="font-family:Verdana;">
+ 
+
+<div style="background-color:#675757;padding:25px;">
+  <h1>
+    My Family's</h1>
+
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Boong</div>
+    <div class="menuitem">Bống</div>
+    <div class="menuitem">Bụp</div>
+    <div class="menuitem">Thỏ</div>
+    <div class="menuitem">Sóc</div>
+  </div>
+
+  <div class="main">
+    <h2>Zìn Zìn</h2>
+    <p>Bám chạt vào không ngã nhé chị Bống</p>
+    <img src="tho.jpg" style="width:100%">
+    <img src="go.webp" style="width:100%">
+ <!-- <div class="right">  -->
+  <div style="background-color:black;color:white;padding:20px;">
+    <h2>Bunny</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Cute</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>Princesss</h2>
+    <p>The Walk is free!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#605959;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by ps.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>

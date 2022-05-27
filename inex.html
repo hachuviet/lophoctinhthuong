@@ -1,0 +1,50 @@
+<html>
+    <style>
+        h1 {
+            text-align: center;
+            color:red;
+        }
+        td ,th{
+            border:solid 1px;
+        }
+    </style>
+    
+    <header>
+        <style>
+            a{
+                color:blue;
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
+            }
+        </style>
+    </header>
+    <body>
+        <a id="hovaten">chu viet ha</a>
+        <p id="kq"></p>
+    </body>
+    <script>
+        let ph='chu' ;
+        let p1='việt hùng';
+        document.write('</br>Họ và tên:'+ph+ ' ' +p1);
+        let thung='gao';
+        document.write('</br>thúng chứa:'+thung);
+        thung='đỗ xanh';
+        document.write('</br>thúng chứa:'+thung);
+        let soThuNhat=1;
+        let soThuHai=2;
+        document.write('</br>tổng 2 số:'+soThuNhat+soThuHai);
+        document.write('</br>tổng 2 số:'+(soThuNhat+soThuHai));
+        let ho='chu';
+        let ten ="viet hung";
+        
+        document.write('</br>ho va ten:'+ho +' ' +ten);
+        let aHoTen=document.getElementById("hovaten");
+        aHoTen.innerText=ho + ' ' + ten;
+        let kq=document.getElementById("kq");
+        kq.innerText=soThuNhat+soThuHai;
+
+        
+
+    </script>
+</html>
