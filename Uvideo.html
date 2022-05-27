@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(5px);
+        }
+        /* (ấn lõm nút) */
+        
+        button {
+            border-radius: 50px;
+            /* (bo góc) */
+        }
+        
+        button:hover {
+            background-color: rgb(142, 142, 177);
+            color: black;
+            cursor: pointer;
+            /* (trỏ chuột bàn tay) */
+        }
+        
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .button:hover span {
+            padding-right: 25px;
+        }
+        
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        .mydiv {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <button onclick="playPause()"><span><i>Play/Pause</i></span></button>
+        <button onclick="makeTo()"><i>To</i></button>
+        <button onclick="makeNhỡ()"><i>Nhỡ</i></button>
+        <button onclick="makeNhỏ()"><i>Nhỏ</i></button>
+        <button onclick="makeẨn()"><i>Ẩn</i></button>
+    </div>
+    <!-- (div- gộp 1 nhóm để khai báo) -->
+    <br>
+    <!-- (br- cách dòng) -->
+    <video id="video1" width="620">
+    <!-- <source src="Cô Tô  Quan Lạn 2022.mp4" type="video/mp4"> -->
+    <!-- <source src="Sapa 21012022 _1080p.mp4" type="video/mp4"> -->
+    <!-- <source src="2 ngày trinh phục Vịnh Lan Hạ- Cát Bà !!.mp4" type="video/mp4"> -->
+    <source src="Tây Bắc đón năm mới 2022.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    <!-- Your browser does not support HTML video. -->
+  </video>
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeTo() {
+            myVideo.width = 980;
+        }
+
+        function makeNhỡ() {
+            myVideo.width = 730;
+        }
+
+        function makeNhỏ() {
+            myVideo.width = 330;
+        }
+
+        function makeẨn() {
+            myVideo.width = 0;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
