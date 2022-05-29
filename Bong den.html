@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button:hover {
+            background-color: rgb(142, 142, 177);
+            color: black;
+            cursor: pointer;
+            /* (trỏ chuột bàn tay) */
+        }
+        
+        button:active {
+            background-color: #6f756f;
+            box-shadow: 0 3px #666;
+            transform: translateY(3px);
+        }
+        
+        button {
+            border-radius: 50px;
+            /* (bo góc) */
+        }
+        
+        .Mydiv {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Mydiv">
+        <img id="myImage" src="../anh/pic_bulbon.gif" style="width:150px">
+    </div>
+
+    <div class="Mydiv">
+        <!-- <body style="background-color: rgb(43, 205, 226);"> -->
+        <button onclick="document.getElementById('myImage').src='../anh/pic_bulbon.gif'"><b>ON</b></button>
+        <!-- (nhấp chuột trỏ đến thư mục ảnh) -->
+        <button onclick="document.getElementById('myImage').src='../anh/pic_bulboff.gif'"><b>OFF</b></button>
+        <!-- (nhấp chuột trỏ đến thư mục ảnh) -->
+        <!-- (kích thước ảnh) -->
+        <button onclick="document.getElementById('myImage').src='../anh/xoá.gif'"><b>Ẩn</b></button>
+    </div>
+
+</body>
+
+</html>
